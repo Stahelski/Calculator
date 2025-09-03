@@ -12,7 +12,7 @@
     color: black;
 }
 
-#knapp{
+.knapp{
     height: 20px;
     width: 20px;
     background-color: gray;
