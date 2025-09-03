@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="kalkulatorContainer">
+      <input type="number" class="display" readonly />
+      <button id="knapp" class="ni">9</button>
+      <button id="knapp" class="åtte">8</button>
+      <button id="knapp" class="syv">7</button>
+      <button id="knapp" class="seks">6</button>
+      <button id="knapp" class="fem">5</button>
+      <button id="knapp" class="fire">4</button>
+      <button id="knapp" class="tre">3</button>
+      <button id="knapp" class="to">2</button>
+      <button id="knapp" class="en">1</button>
+      <button id="knapp" class="null">0</button>
+      <button id="knapp" class="erlik">=</button>
+      <button id="knapp" class="pluss">+</button>
+      <button id="knapp" class="minus">-</button>
+      <button id="knapp" class="gange">*</button>
+      <button id="knapp" class="dele">/</button>
+      <button id="knapp" class="slett">C</button>
+      <button id="knapp" class="komma">,</button>
+    </div>
+
+    <script>
+      const display = document.getQuerySelector(".display");
+      const ni = document.getQuerySelector(".ni");
+      const åtte = document.getQuerySelector(".åtte");
+      const syv = document.getQuerySelector(".syv");
+      const seks = document.getQuerySelector(".seks");
+      const fem = document.getQuerySelector(".fem");
+      const fire = document.getQuerySelector(".fire");
+      const tre = document.getQuerySelector(".tre");
+      const to = document.getQuerySelector(".to");
+      const en = document.getQuerySelector(".en");
+      const nada = document.getQuerySelector(".null");
+      const erlik = document.getQuerySelector(".erlik");
+      const pluss = document.getQuerySelector(".pluss");
+      const minus = document.getQuerySelector(".minus");
+      const gange = document.getQuerySelector(".gange");
+      const dele = document.getQuerySelector(".dele");
+      const slett = document.getQuerySelector(".slett");
+      const komma = document.getQuerySelector(".komma");
+
+      ni.addEventListener("click", tallNi);
+      åtte.addEventListener("click", tallÅtte);
+      syv.addEventListener("click", tallSyv);
+      seks.addEventListener("click", tallSeks);
+      fem.addEventListener("click", tallFem);
+      fire.addEventListener("click", tallFire);
+      tre.addEventListener("click", tallTre);
+      to.addEventListener("click", tallTo);
+      en.addEventListener("click", tallEn);
+      nada.addEventListener("click", tallNada);
+      erlik.addEventListener("click", btnErlik);
+      pluss.addEventListener("click", btnPluss);
+      minus.addEventListener("click", btnMinus);
+      gange.addEventListener("click", btnGange);
+      dele.addEventListener("click", btnDele);
+      slett.addEventListener("click", btnSlett);
+      komma.addEventListener("click", btnKomma);
+
+      function tallNi() {
+         
+      }
+      function tallÅtte() {}
+      function tallSyv() {}
+      function tallSeks() {}
+      function tallFem() {}
+      function tallFire() {}
+      function tallTre() {}
+      function tallTo() {}
+      function tallEn() {}
+      function tallNada() {}
+      function btnErlik() {}
+      function btnPluss() {}
+      function btnMinus() {}
+      function btnGange() {}
+      function btnDele() {}
+      function btnSlett() {}
+      function btnKomma() {}
+    </script>
+  </body>
+</html>

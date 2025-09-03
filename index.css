@@ -1,0 +1,20 @@
+.kalkulatorContainer{
+    height: 400px;
+    width: 200px;
+    background-color: black;
+    display: grid;
+}
+
+.display{
+    height: 20px;
+    width: 198px;
+    background-color: aliceblue;
+    color: black;
+}
+
+#knapp{
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    color: aliceblue;
+}
