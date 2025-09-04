@@ -25,7 +25,6 @@
       <button class="knapp">-</button>
       <button class="knapp">*</button>
       <button class="knapp">/</button>
-      <button class="knapp">,</button>
 
       <button class="knapp">C</button>
       <button class="knapp">=</button>
@@ -33,16 +32,34 @@
 
     <script>
       const display = document.querySelector(".display");
-      const btn = document.querySelector(".knapp");
+      const btn = document.querySelectorAll(".knapp");
 
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const val = button.textContent;
+      btn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const val = btn.textContent;
           if (val === "C") {
+            clearDisplay();
+          } else if (val === "=") {
+            return sum();
+          } else if (val === "/") {
+            return num / num2;
+          } else if (val === "*") {
+            return num * num2;
+          } else if (val === "-") {
+            return num - num2;
+          } else if (val === "+") {
+            return num + num2;
+          } else {
+            document.querySelector(".display").value += val;
           }
         });
       });
-      function operator() {}
+      // ta val sin verdi å legg inn i display
+      function clearDisplay(display) {
+        display.value = "";
+      }
+
+      function sum(display) {}
     </script>
   </body>
 </html>
